@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment and local overrides
+.env
+.env.local
+
+# Runtime data (SQLite, workspaces, releases, logs, secrets)
+data/
+server/data/
+
+# SQLite WAL sidecars (if created outside data/)
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# OS
+.DS_Store

@@ -1,0 +1,31 @@
+.git
+.gitignore
+.idea
+.vscode
+.cache
+.metadata
+.project
+.settings
+nbproject
+atlassian*
+
+# Secrets and local env (never in build context)
+auth.json
+app/etc/env.php
+
+# Regenerated during Docker build
+/generated/**
+!/generated/.htaccess
+/pub/static/**
+!/pub/static/.htaccess
+/var/**
+!/var/.htaccess
+
+# Local vendor (reinstalled in image)
+/vendor/**
+
+# Dev / test noise
+/dev/tests
+/node_modules
+*.md
+!app/code/**/*.md
